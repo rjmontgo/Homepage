@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Rob</title>
+  <meta name="description" content="Home">
+  <meta name="author" content="Robert">
+
+  <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Welcome -->
+    <div>
+      <h1 id="welcome-text" />
+    </div>
+ 
+    <!-- days to live -->
+    <div>
+      <progress-ring 
+        stroke="20" 
+        radius="200" 
+        progress="0"
+        id="life-bar">
+      </progress-ring> 
+    </div>
+  
+    <p id="life-stats">
+      You have lived approximately
+    </p>
+
+    <!-- search bar ddg -->
+    <div class="searchbar">
+      <input id="searchInput" />
+      <input id="searchButton" type="button" value="Submit">
+      </input>
+    </div>
+
+  </div>
+
+  <script src="./ProgressRing.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Cuisine';
+  src: url('assets/Roboto_Mono/static/RobotoMono-Regular.ttf') format('truetype')
+}
+
+body {
+  background-color: #f8f8ff;
+}
+
+.title {
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  flex-direction: column;
+}
+
+p,
+h1,
+h2,
+h3 {
+  font-family: 'Cuisine'
+}
+
+.searchbar {
+  display: flex;
+}
+
+#searchInput {
+  border: none;
+  font-family: 'Cuisine';
+  font-size: 17px;
+}
+
+#searchButton {
+  border: none;
+  font-family: 'Cuisine';
+}
+
