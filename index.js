@@ -36,17 +36,24 @@ setTimeout(updateProgressBar, 0);
 
 /** Search bar */
 const input = document.getElementById("searchInput");
-input.addEventListener("change", function(ev) {
-  const searchString = ev.target.value.trim().replace(" ", "+");
-  window.open(`https://duckduckgo.com/?q=${searchString}`, '_self');
+input.addEventListener("keypress", function(ev) {
+  if (ev.key === 'Enter') {
+    const searchString = input.value.trim().replace(" ", "+");
+    window.open(`https://duckduckgo.com/?q=${searchString}`, '_self');
+  }
 })
 
 const searchBarDiv = document.getElementById("searchbar");
 const searchBarButton = document.getElementById("searchButton");
 searchBarDiv.addEventListener("mouseover", function() {
-  searchBarButton.style.backgroundColor = "rgb(210, 210, 210)";
+  searchBarButton.style.backgroundColor = "#555";
 });
 
 searchBarDiv.addEventListener("mouseout", function() {
-  searchBarButton.style.backgroundColor = "rgb(239, 239, 239)"
+  searchBarButton.style.backgroundColor = "#333";
+});
+
+searchBarButton.addEventListener('click', function() {
+  const searchString = input.value.trim().replace(" ", "+");
+  window.open(`https://duckduckgo.com/?q=${searchString}`, '_self');
 });

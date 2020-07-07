@@ -4,11 +4,12 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Rob</title>
+  <title>Home</title>
   <meta name="description" content="Home">
   <meta name="author" content="Robert">
 
   <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="favicon.ico" sizes="any" type="image/svg+xml">
 
 </head>
 
@@ -17,13 +18,13 @@
     <!-- Welcome -->
     <div>
       <h1 id="welcome-text" />
-    </div>
+    </div> 
  
     <!-- days to live -->
-    <div>
+    <div class="progress-ring">
       <progress-ring 
-        stroke="20" 
-        radius="200" 
+        stroke="13" 
+        radius="100" 
         progress="0"
         id="life-bar">
       </progress-ring> 
@@ -35,11 +36,10 @@
 
     <!-- search bar ddg -->
     <div id="searchbar" class="searchbar">
-      <input id="searchInput" />
-      <input id="searchButton" type="button" value="Submit">
-      </input>
+      <input id="searchInput" /> 
+      <input id="searchButton" type="image" src="assets/search-24px.svg" />
     </div>
-
+ 
   </div>
 
   <script src="./ProgressRing.js"></script>

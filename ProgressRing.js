@@ -41,9 +41,9 @@ class ProgressRing extends HTMLElement {
         font-size="${Math.ceil(radius / 100)}em"
         font-family="Cuisine" 
         text-anchor="middle" 
-        fill="black"
+        fill="white"
       >
-        <tspan id="dayText">${this._days}</tspan>
+        <tspan id="dayText" y="${radius - 5}">${this._days}</tspan>
         <tspan x="${radius}" dy="1.2em">days left</tspan>
       </text>
       </svg>
