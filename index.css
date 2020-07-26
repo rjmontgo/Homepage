@@ -19,6 +19,7 @@ body {
 }
 
 p,
+span,
 h1,
 h2,
 h3 {
@@ -32,8 +33,18 @@ h3 {
 
 .searchbar {
   display: flex;
-  position: absolute;
-  top: 50vh;
+  position: relative;
+  margin-top: 60px;
+}
+
+.card {
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 2px;
+  border-color: #131313;
+  background-color: #333333;
+  padding: 20px;
+  margin: 5px;
 }
 
 #searchInput {
